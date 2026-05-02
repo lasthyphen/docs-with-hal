@@ -36,8 +36,8 @@ tests on them.</p>
 repository</a> and
 install the necessary packages via <code class="short-inline-codeblock">yarn</code>.</p>
 <div class="ch-codeblock not-prose "><div class="ch-code" style="margin:0;padding:0;position:relative;white-space:pre;box-sizing:content-box;opacity:0;overflow:auto"><code class="ch-code-scroll-parent"><br/><div><span class="ch-code-line-number">_<!-- -->10</span><div style="display:inline-block;margin-left:16px"><span>git clone https://github.com/Dijets-Inc/dijets-smart-contracts-guide.git</span></div></div><div><span class="ch-code-line-number">_<!-- -->10</span><div style="display:inline-block;margin-left:16px"><span>cd dijets-smart-contracts-guide</span></div></div><div><span class="ch-code-line-number">_<!-- -->10</span><div style="display:inline-block;margin-left:16px"><span>yarn</span></div></div><br/></code></div></div>
-<p>In order to deploy contracts, you need to have some test DJTX in your wallet. You can get testnet
-DJTX from <a href="https://faucet.dijets.io">Dijets Faucet</a>, that transfers a small amount of test DJTX tokens for
+<p>In order to deploy contracts, you need to have some test DJT in your wallet. You can get testnet
+DJT from <a href="https://faucet.dijets.io">Dijets Faucet</a>, that transfers a small amount of test DJT tokens for
 you to play around with.</p>
 <h2 id="write-contracts" class="group scroll-mt-24">Write Contracts<a href="#write-contracts" class="ml-2 opacity-0 group-hover:opacity-100 transition">#</a></h2>
 <p>We’ll use a sample ERC721 contract to track items in our game, which will each have their own unique attributes.
@@ -67,7 +67,7 @@ smart contracts.</p>
 compiled contract with Forge we need to:</p>
 <ol>
 <li>Set environment variables for the RPC endpoint.</li>
-<li>Specify the private key with test DJTX to deploy the contract.</li>
+<li>Specify the private key with test DJT to deploy the contract.</li>
 </ol>
 <p>Set your environment variables by running:</p>
 <div class="ch-codeblock not-prose "><div class="ch-code" style="margin:0;padding:0;position:relative;white-space:pre;box-sizing:content-box;opacity:0;overflow:auto"><code class="ch-code-scroll-parent"><br/><div><span class="ch-code-line-number">_<!-- -->10</span><div style="display:inline-block;margin-left:16px"><span>export RPC_URL=&lt;YOUR-RPC-ENDPOINT&gt;</span></div></div><div><span class="ch-code-line-number">_<!-- -->10</span><div style="display:inline-block;margin-left:16px"><span>export PRIVATE_KEY=&lt;YOUR-PRIVATE-KEY&gt;</span></div></div><br/></code></div></div>

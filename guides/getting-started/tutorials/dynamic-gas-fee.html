@@ -19,7 +19,7 @@ high network activity or heavy network congestion when fees are frequently fluct
 Wallets like Decypher and MetaMask will automatically do that for you.</p></div></div>
 <h2 id="keywords-and-concepts" class="group scroll-mt-24">Keywords and Concepts<a href="#keywords-and-concepts" class="ml-2 opacity-0 group-hover:opacity-100 transition">#</a></h2>
 <p>The amount of computation used by a transaction is measured in units of <code class="short-inline-codeblock">gas</code>.
-Each unit of gas is paid for in DJTX at the <code class="short-inline-codeblock">gas price</code> for the transaction. The
+Each unit of gas is paid for in DJT at the <code class="short-inline-codeblock">gas price</code> for the transaction. The
 <code class="short-inline-codeblock">gas price</code> of the transaction is determined by the parameters of the
 transaction and the <code class="short-inline-codeblock">base fee</code> of the block that it is included in.</p>
 <p>To avoid draining the user&#x27;s wallet due to non-terminating execution through the
@@ -71,7 +71,7 @@ pay above the base price to prioritize their transaction. But the tip is capped
 by both the gas tip cap as well as the gas fee cap. The actual tip paid above
 the <code class="short-inline-codeblock">base fee</code> of the block is known as the <code class="short-inline-codeblock">effective gas tip</code>.</p>
 <div class="ch-codeblock not-prose "><div class="ch-code" style="margin:0;padding:0;position:relative;white-space:pre;box-sizing:content-box;opacity:0;overflow:auto"><code class="ch-code-scroll-parent"><br/><div><span class="ch-code-line-number">_<!-- -->10</span><div style="display:inline-block;margin-left:16px"><span>EffectiveTip = min(MaxFeeCap - BaseFee, GasTipCap)</span></div></div><br/></code></div></div>
-<p>Consider the following examples (here Gwei or nDJTX equates to one-billionth of 1 DJTX)</p>
+<p>Consider the following examples (here Gwei or nDJTX equates to one-billionth of 1 DJT)</p>
 <table><thead><tr><th>Transaction</th><th>Max Fee Cap</th><th>Gas tip cap</th><th>Base price</th><th>Effective tip</th><th>Total price</th></tr></thead><tbody><tr><td>1</td><td>50 Gwei</td><td>0 Gwei</td><td>25 Gwei</td><td>0 Gwei</td><td>25 Gwei</td></tr><tr><td>2</td><td>50 Gwei</td><td>0 Gwei</td><td>50 Gwei</td><td>0 Gwei</td><td>50 Gwei</td></tr><tr><td>3</td><td>50 Gwei</td><td>0 Gwei</td><td>60 Gwei</td><td>0 Gwei</td><td><strong>PENDING</strong></td></tr><tr><td>A</td><td>50 Gwei</td><td>10 Gwei</td><td>40 Gwei</td><td>10 Gwei</td><td>50 Gwei</td></tr><tr><td>B</td><td>40 Gwei</td><td>40 Gwei</td><td>40 Gwei</td><td>0 Gwei</td><td>40 Gwei</td></tr></tbody></table>
 <p>Look at transactions <strong>A</strong> and <strong>B</strong> (the bottom two transactions). In these
 scenarios, it looks like transaction B is paying a higher tip, however, this
@@ -102,7 +102,7 @@ fluctuating.</p>
 <ol>
 <li>
 <p>Let&#x27;s create a sample transaction on Dijets Mainnet, in which we will be
-sending 0.1 DJTX to a receiver using the MetaMask. By clicking <strong>Next</strong> we
+sending 0.1 DJT to a receiver using the MetaMask. By clicking <strong>Next</strong> we
 can review gas fees and the amount which we want to send.</p>
 </li>
 <li>

@@ -39,7 +39,7 @@ you started your node with config flag <code class="short-inline-codeblock">--pu
 doc</a>. When you’ve filled in all the staking parameters
 and double-checked them, click <code class="short-inline-codeblock">Confirm</code>. Make sure the staking period is at
 least 2 weeks, the delegation fee rate is at least 2%, and you’re staking at
-least 2,000 DJTX on Mainnet (1 DJTX on Dijets TestNet Testnet).</p>
+least 2,000 DJT on Mainnet (1 DJT on Dijets TestNet Testnet).</p>
 <p>You should see a success message, and your balance should be updated.</p>
 <p>Calling
 <a href="/guides/node-apis/method-chain-api#methodgetpendingvalidators"><code class="short-inline-codeblock">platform.getPendingValidators</code></a>
@@ -130,7 +130,7 @@ requirements.</p>
 <h4 id="stake-amount">Stake Amount</h4>
 <p>Set the proper staking amount in calling <code class="short-inline-codeblock">pchain.buildAddValidatorTx</code> by
 replacing <code class="short-inline-codeblock">stakeAmount.minValidatorStake</code> with a number in the unit of gwei, for
-example, <code class="short-inline-codeblock">BN(1e12)</code> which is 10,000 DJTX.</p>
+example, <code class="short-inline-codeblock">BN(1e12)</code> which is 10,000 DJT.</p>
 <h4 id="addresses">Addresses</h4>
 <p>By default, the example uses the variable <code class="short-inline-codeblock">pAddressStrings</code> to define
 <code class="short-inline-codeblock">toAddresses</code>, <code class="short-inline-codeblock">fromAddresses</code>, <code class="short-inline-codeblock">changeAddresses</code> and <code class="short-inline-codeblock">rewardAddresses</code>:</p>
@@ -175,7 +175,7 @@ and then run the script:</p>
 <p>When the time reaches <code class="short-inline-codeblock">1654656829</code> (Wed Jun 08 2022 02:53:49 GMT+0000), this
 node will start validating the Primary Network. When it reaches <code class="short-inline-codeblock">1662602029</code>
 (Thu Sep 08 2022 01:53:49 GMT+0000), this node will stop validating the Primary
-Network. The staked DJTX and the rewards, if any, will be returned to
+Network. The staked DJT and the rewards, if any, will be returned to
 <code class="short-inline-codeblock">pAddressStrings</code>.</p>
 <h4 id="customizing-addresses">Customizing Addresses</h4>
 <p>There are 4 addresses which are needed when calling
